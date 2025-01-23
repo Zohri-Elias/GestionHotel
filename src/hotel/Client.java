@@ -1,9 +1,11 @@
 package hotel;
 
 public class Client {
-    public Client(String bobMartin, String mail) {
-    }
+    private String nom;
+    private String email;
 
-    public static void main(String[] args) {
+    public Client(String nom, String email) {
+        this.nom = nom;
+        this.email = email;
     }
 }
