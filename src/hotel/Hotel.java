@@ -3,20 +3,15 @@ package hotel;
 import java.util.ArrayList;
 
 public class Hotel {
-    private int Chambre;
-    private ArrayList<Chambre> chambre = new ArrayList<>(Chambre);
-    private int Reservation;
-    private ArrayList<Reservation> reservations = new ArrayList<>(Reservation);
+    private ArrayList<Chambre> chambre = new ArrayList<Chambre>();
+    private ArrayList<Reservation> reservations = new ArrayList<Reservation>();
 
     public Hotel(String s, String avenueDesRennes, String laponie) {
-        Chambre = Integer.parseInt(s);
-        Reservation = Integer.parseInt(avenueDesRennes);
-        Reservation = Integer.parseInt(laponie);
+        
     }
 
     public void ajouterChambre(Chambre chambre1) {
         this.chambre.add(chambre1);
-        this.Chambre++;
     }
 
     public void afficherChambresDisponibles() {
