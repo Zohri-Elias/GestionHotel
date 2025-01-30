@@ -1,7 +1,7 @@
 package hotel;
 
 public class Client {
-    private String nom;
+    String nom;
     private String email;
 
     public Client(String nom, String email) {
